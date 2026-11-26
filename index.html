@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Desafio da Informática</title>
+  <title>Desafio tecnológico</title>
   <style>
     :root {
       --bg: #0b1220;
@@ -266,8 +266,8 @@
   <div class="container">
     <header>
       <div class="badge">Quiz Interativo</div>
-      <h1>Desafio da Informática</h1>
-      <p class="subtitle">Teste seus conhecimentos sobre hardware, redes e tecnologia.</p>
+      <h1>Desafio tecnológico</h1>
+      <p class="subtitle">Teste seus conhecimentos sobre sistemas, redes, hardware, segurança e robótica.</p>
     </header>
 
     <main class="card">
@@ -314,7 +314,111 @@
       {
         id: 1,
         type: "single",
-        question: "1. Qual componente é considerado o cérebro do computador?",
+        question: "1. Se o computador liga, mas fica muito lento ao abrir vários programas, qual componente pode estar com pouca capacidade?",
+        options: [
+          { key: "A", label: "Teclado" },
+          { key: "B", label: "Mouse" },
+          { key: "C", label: "Monitor" },
+          { key: "D", label: "Memória RAM" }
+        ],
+        correct: ["D"],
+        explanation: "A memória RAM guarda temporariamente os dados e programas em uso; pouca RAM causa lentidão ao abrir vários aplicativos."
+      },
+      {
+        id: 2,
+        type: "single",
+        question: "2. O que acontece quando você apaga um arquivo da Lixeira do Windows?",
+        options: [
+          { key: "A", label: "Ele é removido do sistema de arquivos" },
+          { key: "B", label: "Ele vai para a memória RAM" },
+          { key: "C", label: "Ele é enviado automaticamente para a internet" },
+          { key: "D", label: "Ele vira um programa" }
+        ],
+        correct: ["A"],
+        explanation: "Esvaziar ou apagar da Lixeira remove a entrada do arquivo do sistema de arquivos e libera o espaço em disco."
+      },
+      {
+        id: 3,
+        type: "single",
+        question: "3. O que significa IP em uma rede de computadores?",
+        options: [
+          { key: "A", label: "Internet Protocol" },
+          { key: "B", label: "Information Processor" },
+          { key: "C", label: "Internal Program" },
+          { key: "D", label: "Internet Printer" }
+        ],
+        correct: ["A"],
+        explanation: "IP significa Internet Protocol, o conjunto de regras e endereços usados para identificar dispositivos e rotear dados na rede."
+      },
+      {
+        id: 4,
+        type: "single",
+        question: "4. Qual componente é responsável pelo processamento gráfico de jogos e imagens?",
+        options: [
+          { key: "A", label: "GPU" },
+          { key: "B", label: "Fonte de alimentação" },
+          { key: "C", label: "SSD" },
+          { key: "D", label: "Cooler" }
+        ],
+        correct: ["A"],
+        explanation: "A GPU (Graphics Processing Unit) é especializada em cálculos paralelos para renderizar gráficos, imagens e jogos."
+      },
+      {
+        id: 5,
+        type: "single",
+        question: "5. O que é phishing?",
+        options: [
+          { key: "A", label: "Uma técnica de golpe para roubar informações" },
+          { key: "B", label: "Um cabo de rede" },
+          { key: "C", label: "Um tipo de memória" },
+          { key: "D", label: "Um programa de edição" }
+        ],
+        correct: ["A"],
+        explanation: "Phishing é uma tentativa de fraude (geralmente por mensagens ou páginas falsas) para enganar o usuário e roubar senhas ou dados."
+      },
+      {
+        id: 6,
+        type: "single",
+        question: "6. Qual é a função dos sensores em um robô?",
+        options: [
+          { key: "A", label: "Perceber informações do ambiente" },
+          { key: "B", label: "Armazenar todos os arquivos" },
+          { key: "C", label: "Substituir o programa" },
+          { key: "D", label: "Apenas decorar o robô" }
+        ],
+        correct: ["A"],
+        explanation: "Os sensores captam sinais do ambiente (como distância, luz, toque ou temperatura) para o robô reagir ou tomar decisões."
+      },
+      {
+        id: 7,
+        type: "single",
+        question: "7. O que significa a sigla LAN?",
+        options: [
+          { key: "A", label: "Local Area Network" },
+          { key: "B", label: "Large Access Number" },
+          { key: "C", label: "Linked Application Node" },
+          { key: "D", label: "Long Automatic Network" }
+        ],
+        correct: ["A"],
+        explanation: "LAN significa Local Area Network (Rede Local), que interliga dispositivos em uma área restrita, como uma casa, escola ou escritório."
+      },
+      {
+        id: 8,
+        type: "single",
+        question: "8. Qual é a principal diferença entre hardware e software?",
+        options: [
+          { key: "A", label: "Hardware é internet e software é energia" },
+          { key: "B", label: "Os dois são peças físicas" },
+          { key: "C", label: "Hardware é físico e software é lógico" },
+          { key: "D", label: "Software é físico e hardware é virtual" }
+        ],
+        correct: ["C"],
+        explanation: "Hardware corresponde às partes físicas do computador, enquanto software são os programas, sistemas e instruções lógicas."
+      },
+      {
+        id: 9,
+        type: "single",
+        question: "9. Qual componente é considerado o cérebro do computador?",
         options: [
           { key: "A", label: "Teclado" },
           { key: "B", label: "Monitor" },
@@ -322,49 +426,12 @@
           { key: "D", label: "Mouse" }
         ],
         correct: ["C"],
-        explanation: "O processador (CPU) executa as instruções e coordena o processamento de dados do computador."
+        explanation: "O processador (CPU) executa as instruções e coordena as operações do computador."
       },
       {
-        id: 2,
+        id: 10,
         type: "single",
-        question: "2. Qual é a principal função da memória RAM?",
-        options: [
-          { key: "A", label: "Guardar temporariamente dados em uso" },
-          { key: "B", label: "Exibir imagens" },
-          { key: "C", label: "Conectar à internet" },
-          { key: "D", label: "Armazenar arquivos para sempre" }
-        ],
-        correct: ["A"],
-        explanation: "A memória RAM armazena temporariamente os dados e programas que estão em uso para acesso rápido."
-      },
-      {
-        id: 3,
-        type: "single",
-        question: "3. Qual destes componentes é utilizado para armazenar arquivos e programas?",
-        options: [
-          { key: "A", label: "Cooler" },
-          { key: "B", label: "HD ou SSD" },
-          { key: "C", label: "Mouse" },
-          { key: "D", label: "Monitor" }
-        ],
-        correct: ["B"],
-        explanation: "HDs e SSDs são unidades de armazenamento onde ficam salvos o sistema operacional, programas e arquivos."
-      },
-      {
-        id: 4,
-        type: "single",
-        question: "4. O teclado é um dispositivo de entrada de dados.",
-        options: [
-          { key: "V", label: "Verdadeiro" },
-          { key: "F", label: "Falso" }
-        ],
-        correct: ["V"],
-        explanation: "Verdadeiro: o teclado envia comandos e caracteres digitados pelo usuário para o computador."
-      },
-      {
-        id: 5,
-        type: "single",
-        question: "5. Qual é a função da placa-mãe?",
+        question: "10. Qual é a função da placa-mãe?",
         options: [
           { key: "A", label: "Imprimir documentos" },
           { key: "B", label: "Armazenar energia elétrica" },
@@ -372,70 +439,7 @@
           { key: "D", label: "Mostrar imagens na tela" }
         ],
         correct: ["C"],
-        explanation: "A placa-mãe interliga CPU, memória, armazenamento e periféricos, permitindo a comunicação entre eles."
-      },
-      {
-        id: 6,
-        type: "single",
-        question: "6. O que significa Wi-Fi?",
-        options: [
-          { key: "A", label: "Um tipo de teclado" },
-          { key: "B", label: "Uma conexão de rede sem fio" },
-          { key: "C", label: "Um programa de edição" },
-          { key: "D", label: "Uma peça do processador" }
-        ],
-        correct: ["B"],
-        explanation: "Wi-Fi é uma tecnologia de rede local sem fio que conecta dispositivos por ondas de rádio."
-      },
-      {
-        id: 7,
-        type: "single",
-        question: "7. Qual equipamento é utilizado para distribuir a conexão de internet em uma rede?",
-        options: [
-          { key: "A", label: "Caixa de som" },
-          { key: "B", label: "Roteador" },
-          { key: "C", label: "Impressora" },
-          { key: "D", label: "Scanner" }
-        ],
-        correct: ["B"],
-        explanation: "O roteador gerencia e distribui o sinal de rede/internet entre os dispositivos conectados."
-      },
-      {
-        id: 8,
-        type: "multiple",
-        question: "8. Quais destes são dispositivos de entrada de dados? Escolha todos os corretos.",
-        options: [
-          { key: "A", label: "Teclado" },
-          { key: "B", label: "Microfone" },
-          { key: "C", label: "Monitor" },
-          { key: "D", label: "Mouse" }
-        ],
-        correct: ["A", "B", "D"],
-        explanation: "Teclado, microfone e mouse enviam dados para o computador; o monitor é dispositivo de saída."
-      },
-      {
-        id: 9,
-        type: "single",
-        question: "9. A internet e o Wi-Fi são exatamente a mesma coisa.",
-        options: [
-          { key: "V", label: "Verdadeiro" },
-          { key: "F", label: "Falso" }
-        ],
-        correct: ["F"],
-        explanation: "Falso: a internet é a rede mundial de computadores; o Wi-Fi é apenas uma forma sem fio de conectar à rede."
-      },
-      {
-        id: 10,
-        type: "single",
-        question: "10. O que é um robô?",
-        options: [
-          { key: "A", label: "Um equipamento que só serve para jogar" },
-          { key: "B", label: "Um tipo de monitor" },
-          { key: "C", label: "Um cabo de computador" },
-          { key: "D", label: "Uma máquina programada para executar tarefas" }
-        ],
-        correct: ["D"],
-        explanation: "Um robô é uma máquina programável capaz de realizar ações ou tarefas de forma automatizada."
+        explanation: "A placa-mãe conecta e permite a comunicação entre CPU, RAM, armazenamento, placa de vídeo e periféricos."
       }
     ];
 
@@ -477,10 +481,7 @@
       progressFill.style.width = `${(currentIndex / questions.length) * 100}%`;
 
       qText.textContent = q.question;
-      qHint.textContent =
-        q.type === "multiple"
-          ? "Selecione uma ou mais opções corretas e clique em Confirmar resposta."
-          : "Selecione a alternativa correta e clique em Confirmar resposta.";
+      qHint.textContent = "Selecione a alternativa correta e clique em Confirmar resposta.";
 
       feedbackBox.className = "feedback";
       feedbackBox.textContent = "";
@@ -502,17 +503,7 @@
 
     function toggleOption(key) {
       if (checked) return;
-      const q = questions[currentIndex];
-
-      if (q.type === "single") {
-        selectedKeys = [key];
-      } else {
-        if (selectedKeys.includes(key)) {
-          selectedKeys = selectedKeys.filter((k) => k !== key);
-        } else {
-          selectedKeys.push(key);
-        }
-      }
+      selectedKeys = [key];
 
       const buttons = optionsBox.querySelectorAll(".option-btn");
       buttons.forEach((btn) => {
@@ -579,9 +570,9 @@
       finalScore.textContent = `${score} / ${questions.length}`;
 
       if (score === 10) {
-        finalMessage.textContent = "Excelente! Você gabaritou o Desafio da Informática!";
+        finalMessage.textContent = "Excelente! Você gabaritou o Desafio tecnológico!";
       } else if (score >= 7) {
-        finalMessage.textContent = "Muito bem! Você manda bem nos fundamentos de informática.";
+        finalMessage.textContent = "Muito bem! Você manda bem nos temas de tecnologia.";
       } else if (score >= 4) {
         finalMessage.textContent = "Bom começo! Dá para subir ainda mais essa pontuação.";
       } else {
